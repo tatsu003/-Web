@@ -1,0 +1,224 @@
+html {
+  font-size: 1vw; 
+  height: 100%;
+}
+
+/*
+li{
+  list-style: none;
+}
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.LOGO{
+  width: 16vw;
+  height: 14vw;
+}
+
+
+img {
+  vertical-align: middle;
+}
+
+.gray {
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  filter: grayscale(60%);}
+  
+.gray:hover {
+  -webkit-filter: grayscale(0);
+  -moz-filter: grayscale(0);
+  -ms-filter: grayscale(0);
+  -o-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+.images {
+  position: relative;
+  display: block;
+}
+
+
+.images p {
+  color: white;
+  font-size: 2.5em;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+}
+
+.container {
+  display: flex;
+  flex-flow: row;
+}
+
+.main1 {
+  background-color: aqua;
+  height: 100%;
+  flex: 1 1 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.about_image {
+  width: 50vw;
+  height: 50vw;
+}
+
+.contact_image {
+  width: 25vw;
+  height: 25vw;
+}
+
+.main2 {
+  background-color: aquamarine;
+  flex: 1 1 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.gallery_image {
+  width: 50vw;
+  height: 25vw;
+}
+
+.library_image {
+  width: 25vw;
+  height: 25vw;
+}
+
+.game_image {
+  width: 50vw;
+  height: 25vw;
+}
+
+.main3 {
+  background-color: bisque;
+  flex: 1 1 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.host_image {
+  width: 50vw;
+  height: 25vw;
+}
+
+.aaaaa_image {
+  width: 25vw;
+  height: 25vw;
+}
+
+.text {
+  background-color: gray;
+  color: white;
+  width: 25vw;
+  height: 25vw;
+  font-size: 1.5em;
+}
+
+.text li{
+  margin-bottom: 1em;
+}
+
+@media screen and (max-width:768px) {
+  .images p {
+  font-size: 4em;
+  }
+
+  .container {
+  flex-flow: column;
+  }
+  
+  .main1 {
+    flex-flow: row;
+    flex-wrap: wrap;
+  }
+
+  .about_image {
+    width: 100vw;
+    height: 100vw;
+  }
+
+  .contact_image {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .main2{
+    flex-flow: row;
+    flex-wrap: wrap;
+  }
+
+  .gallery_image {
+    width: 100vw;
+    height: 50vw;
+  }
+
+  .library_image {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .game_image {
+    width: 100vw;
+    height: 50vw;
+  }
+
+  .host_image {
+    width: 100vw;
+    height: 50vw;
+  }
+
+  .aaaaa_image {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .text{
+    width: 50vw;
+    height: 50vw;
+    font-size: 2.6em;
+  }
+
+}
+
+footer,header{
+  background: rgb(120, 120, 120);
+  width: 100vw;
+  height: 12vw;
+  min-height: 70px; /*フッターのサイズは最小60px*/
+  /*margin-bottom: 0em;*/
+}
+
+/*
+header {
+  margin-bottom: 1em;
+}
+
+footer{
+  margin-top: 1em;
+}
+*/
+
+.footer-logo{
+  font-size: 1.2em;
+  float: left;
+  margin-top: 1em;
+  margin-left: 3.5em;
+  color: white;
+}
