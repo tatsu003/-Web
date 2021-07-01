@@ -1,224 +1,301 @@
-html {
-  font-size: 1vw; 
-  height: 100%;
-}
-
-/*
-li{
-  list-style: none;
-}
-*/
-
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  vertical-align: middle;
-}
-
-.LOGO{
-  width: 16vw;
-  height: 14vw;
-}
-
-
-img {
-  vertical-align: middle;
-}
-
-.gray {
-  -webkit-filter: grayscale(100%);
-  -moz-filter: grayscale(100%);
-  -ms-filter: grayscale(100%);
-  -o-filter: grayscale(100%);
-  filter: grayscale(60%);}
-  
-.gray:hover {
-  -webkit-filter: grayscale(0);
-  -moz-filter: grayscale(0);
-  -ms-filter: grayscale(0);
-  -o-filter: grayscale(0);
-  filter: grayscale(0);
-}
-
-.images {
-  position: relative;
-  display: block;
-}
-
-
-.images p {
-  color: white;
-  font-size: 2.5em;
-  font-weight: bold;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%,-50%);
-  -webkit-transform: translate(-50%,-50%);
-  transform: translate(-50%,-50%);
-  margin:0;
-  padding:0;
-}
-
-.container {
-  display: flex;
-  flex-flow: row;
-}
-
-.main1 {
-  background-color: aqua;
-  height: 100%;
-  flex: 1 1 0px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.about_image {
-  width: 50vw;
-  height: 50vw;
-}
-
-.contact_image {
-  width: 25vw;
-  height: 25vw;
-}
-
-.main2 {
-  background-color: aquamarine;
-  flex: 1 1 auto;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.gallery_image {
-  width: 50vw;
-  height: 25vw;
-}
-
-.library_image {
-  width: 25vw;
-  height: 25vw;
-}
-
-.game_image {
-  width: 50vw;
-  height: 25vw;
-}
-
-.main3 {
-  background-color: bisque;
-  flex: 1 1 auto;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.host_image {
-  width: 50vw;
-  height: 25vw;
-}
-
-.aaaaa_image {
-  width: 25vw;
-  height: 25vw;
-}
-
-.text {
-  background-color: gray;
-  color: white;
-  width: 25vw;
-  height: 25vw;
-  font-size: 1.5em;
-}
-
-.text li{
-  margin-bottom: 1em;
-}
-
-@media screen and (max-width:768px) {
-  .images p {
-  font-size: 4em;
-  }
-
-  .container {
-  flex-flow: column;
+html{
+    font-size: 1vw;
   }
   
-  .main1 {
-    flex-flow: row;
-    flex-wrap: wrap;
+   body{
+    margin: 0;
+    padding: 0;
   }
 
-  .about_image {
-    width: 100vw;
-    height: 100vw;
+
+
+  /*パソコンのとき*/
+  @media screen and (min-width:767px) {
+
+    .gray {
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      filter: grayscale(60%);}
+      
+    .gray:hover {
+      -webkit-filter: grayscale(0);
+      -moz-filter: grayscale(0);
+      -ms-filter: grayscale(0);
+      -o-filter: grayscale(0);
+      filter: grayscale(0);
+      color: whitesmoke;
+    }
+
+     #nav-drawer {
+       display:none;
+     }
+
+  /*ここから追加*/
+     footer{
+         width: 100%;
+         height: 15em;
+         min-height: 60px; /*フッターのサイズは最小60px*/
+         /*margin-bottom: 0em;*/
+     }
+  
+     footer li{
+         list-style: none;
+     }
+  
+     footer li a{
+         text-decoration: none;
+     }
+  
+     .footer-logo{
+         font-size: 1.2em;
+         float: left;
+         margin-top: 1em;
+         margin-left: 3em;
+         color: white;
+     }
+  
+     .footer-list{
+         float: right;
+         margin-right: 3em;
+     }
+  
+  
+     .footer-list a{
+         color: white;
+     }
+  
+     .footer-list a:hover{
+         color: whitesmoke;
+     }
+  
+     .footer-list li.D{
+         margin-top: 0.5em;
+         margin-bottom: 0.5em;
+       }
+  
+     .footer-list li.E{
+         margin-bottom: 0.5em;
+     }
+  
+     .footer-list li.F{
+         margin-bottom: 0.5em;
+     }
+  /*ここまで*/
+   }
+  
+  
+  
+  
+  /*スマホのとき*/
+   @media screen and (max-width:767px) {
+      .pc {
+        display:none;
+      }
+   /*スマホのメニューのバックグラウンドカラー*/
+   #nav-content{
+    background-color: gray;
   }
-
-  .contact_image {
-    width: 50vw;
-    height: 50vw;
+  
+  .sidemenu{
+      background-color: gray;
+      height: 100vh;
+      position: fixed;
+      width: 15%; /*パソコン用のサイドメニューの大きさ*/
+      flex: 0 0 20%;
+      bottom: 0;
   }
-
-  .main2{
-    flex-flow: row;
-    flex-wrap: wrap;
+  
+  .sidemenu li{
+      list-style: none;
   }
-
-  .gallery_image {
-    width: 100vw;
-    height: 50vw;
+  
+  .LOGO{
+    height: 21vh;
+    width: 13vw;
+    margin-left: -1.5vw;
   }
-
-  .library_image {
-    width: 50vw;
-    height: 50vw;
+  
+  .HOME{
+    height: 6.5vh;
+    width: 6.5vw;
+    margin-left: -1vw;
+    margin-top: -2.5vh;
   }
-
-  .game_image {
-    width: 100vw;
-    height: 50vw;
+  
+  .ABOUT{
+    height: 8vh;
+    width: 8vw;
+    margin-left: -1.3vw;
   }
-
-  .host_image {
-    width: 100vw;
-    height: 50vw;
+  
+  .GALLERY{
+    height: 11.5vh;
+    width: 11.5vw;
+    margin-left: -1.8vw;
+    margin-top: -2.5vh;
   }
-
-  .aaaaa_image {
-    width: 50vw;
-    height: 50vw;
+  
+  .CONTACT{
+    height: 9.7vh;
+    width: 9.7vw;
+    margin-left: -0.8vw;
+    margin-top: -3.1vh;
   }
-
-  .text{
-    width: 50vw;
-    height: 50vw;
-    font-size: 2.6em;
+  
+  .GAME{
+    height: 8vh;
+    width: 8vw;
+    margin-left: -1.6vw;
+    margin-top: -1.5vh;
   }
-
-}
-
-footer,header{
-  background: rgb(120, 120, 120);
-  width: 100vw;
-  height: 12vw;
-  min-height: 70px; /*フッターのサイズは最小60px*/
-  /*margin-bottom: 0em;*/
-}
-
-/*
-header {
-  margin-bottom: 1em;
-}
-
-footer{
-  margin-top: 1em;
-}
-*/
-
-.footer-logo{
-  font-size: 1.2em;
-  float: left;
-  margin-top: 1em;
-  margin-left: 3.5em;
-  color: white;
-}
+  
+  .LIBRARY{
+    height: 11.5vh;
+    width: 11.5vw;
+    margin-left: -1.7vw;
+    margin-top: -2.5vh;
+  }
+  
+  /*ここからハンバーガーCSS*/
+  header {
+  padding-top: 10px;
+  padding-left: 10px;
+  }
+  
+  #nav-drawer {
+    position: relative;
+  }
+  
+  /*チェックボックス等は非表示に*/
+  .nav-unshown {
+    display: none;
+  }
+  
+  /*アイコンのスペース*/
+  #nav-open {
+    width: 30px;
+    height: 22px;
+    vertical-align: middle;
+  }
+  
+  /*ハンバーガーの形をCSSで表現*/
+  #nav-open span, #nav-open span:before, #nav-open span:after {
+    position: absolute;
+    height: 3px;/*線の太さ*/
+    width: 25px;/*長さ*/
+    border-radius: 3px;
+    background: #FFFFE0;/*ここが３本線の色！！*/
+    display: block;
+    content: '';
+    cursor: pointer;
+    border: 0.3px solid rgba(0,0,0,0.6);
+    border-radius: 4px;
+  }
+  #nav-open span:before {
+    bottom: -8px;
+  }
+  #nav-open span:after {
+    bottom: -16px;
+  }
+  
+  /*閉じる用の薄黒箇所*/
+  #nav-close {
+    display: none;
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    opacity: 0;
+    transition: .3s ease-in-out;
+  }
+  
+  /*メニューの中身*/
+  #nav-content {
+    overflow: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 40%;/*メニュー幅*/
+    max-width: 180px;/*メニューの最大幅*/
+    height: 100%;
+    transition: .3s ease-in-out;
+    -webkit-transform: translateX(-105%);
+    transform: translateX(-105%);
+  }
+  
+  /*チェックがついたら表示させる*/
+  #nav-input:checked ~ #nav-close {
+    display: block;
+    opacity: .5;
+  }
+  
+  #nav-input:checked ~ #nav-content {
+    -webkit-transform: translateX(0%);
+    transform: translateX(0%);
+    box-shadow: 6px 0 25px rgba(0,0,0,.15);
+  }
+  
+  
+  /*ロゴやサイトタイトルをセンタリング*/
+  .logo-area{text-align:center;margin:auto;}
+  
+      
+  
+  /*ここから追加*/
+        footer{
+            background: rgba(165, 127, 96, 0.788);
+            width: 100%;
+            height: 30em;
+            min-height: 150px;
+        }
+  
+        footer li{
+            list-style: none;
+        }
+  
+        footer li a{
+            text-decoration: none;
+        }
+  
+        .footer-logo{
+            font-size: 13.5px;
+            text-align: center;
+            padding-top: 0.5em;
+            color: white;
+        }
+  
+        .footer-list{
+          text-align: center;
+          font-size: 12px;
+        }
+  
+  
+        .footer-list a{
+            color: white;
+        }
+  
+        .footer-list a:hover{
+            color: whitesmoke;
+        }
+  
+        .footer-list li.D{
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+          }
+  
+        .footer-list li.E{
+            margin-bottom: 0.5em;
+        }
+  
+        .footer-list li.F{
+            margin-bottom: 0.5em;
+        }
+        /*ここまで*/
+    }
+  
