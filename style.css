@@ -32,12 +32,10 @@ html{
        display:none;
      }
 
-  /*ここから追加*/
      footer{
-         width: 100%;
-         height: 15em;
-         min-height: 60px; /*フッターのサイズは最小60px*/
-         /*margin-bottom: 0em;*/
+      width: 100%;
+      height: 8em; 
+      min-height: 100px; 
      }
   
      footer li{
@@ -49,16 +47,17 @@ html{
      }
   
      .footer-logo{
-         font-size: 1.2em;
+         font-size: 2vw; 
          float: left;
-         margin-top: 1em;
-         margin-left: 3em;
+         margin-top: 1.1em; 
+         margin-left: 30px; 
          color: white;
      }
   
      .footer-list{
          float: right;
-         margin-right: 3em;
+         margin-right: 1em;
+         font-size: max(15px,1.2vw);
      }
   
   
@@ -105,6 +104,11 @@ html{
       width: 15%; /*パソコン用のサイドメニューの大きさ*/
       flex: 0 0 20%;
       bottom: 0;
+      -webkit-filter: grayscale(100%);
+      -moz-filter: grayscale(100%);
+      -ms-filter: grayscale(100%);
+      -o-filter: grayscale(100%);
+      filter: grayscale(100%);
   }
   
   .sidemenu li{
@@ -112,50 +116,50 @@ html{
   }
   
   .LOGO{
-    height: 21vh;
-    width: 13vw;
-    margin-left: -1.5vw;
+    height: 18vh;
+    width: 37vw;
+    margin-left: -8vw;
+    margin-top: 3vh;
   }
   
   .HOME{
-    height: 6.5vh;
-    width: 6.5vw;
+    height: 7vh;
+    width: 15vw;
     margin-left: -1vw;
-    margin-top: -2.5vh;
   }
   
   .ABOUT{
-    height: 8vh;
-    width: 8vw;
+    height: 9vh;
+    width: 17vw;
     margin-left: -1.3vw;
   }
   
   .GALLERY{
-    height: 11.5vh;
-    width: 11.5vw;
+    height: 12.8vh;
+    width: 20.8vw;
     margin-left: -1.8vw;
     margin-top: -2.5vh;
   }
   
   .CONTACT{
-    height: 9.7vh;
-    width: 9.7vw;
-    margin-left: -0.8vw;
-    margin-top: -3.1vh;
+    height: 10.7vh;
+    width: 18.7vw;
+    margin-left: -0.5vw;
+    margin-top: -3.2vh;
   }
   
   .GAME{
-    height: 8vh;
-    width: 8vw;
-    margin-left: -1.6vw;
-    margin-top: -1.5vh;
+    height: 9vh;
+    width: 17vw;
+    margin-left: -2.5vw;
+    margin-top: -1.7vh;
   }
   
   .LIBRARY{
-    height: 11.5vh;
-    width: 11.5vw;
-    margin-left: -1.7vw;
-    margin-top: -2.5vh;
+    height: 12.5vh;
+    width: 20.5vw;
+    margin-left: -1.6vw;
+    margin-top: -2.6vh;
   }
   
   /*ここからハンバーガーCSS*/
@@ -245,14 +249,12 @@ html{
   /*ロゴやサイトタイトルをセンタリング*/
   .logo-area{text-align:center;margin:auto;}
   
-      
-  
-  /*ここから追加*/
+
         footer{
             background: rgba(165, 127, 96, 0.788);
             width: 100%;
             height: 30em;
-            min-height: 150px;
+            min-height: 100px;
         }
   
         footer li{
@@ -264,10 +266,10 @@ html{
         }
   
         .footer-logo{
-            font-size: 13.5px;
-            text-align: center;
-            padding-top: 0.5em;
-            color: white;
+          font-size: 13.5px;
+          text-align: center;
+          padding-top: 0.5em;
+          color: white;
         }
   
         .footer-list{
@@ -293,9 +295,6 @@ html{
             margin-bottom: 0.5em;
         }
   
-        .footer-list li.F{
-            margin-bottom: 0.5em;
-        }
         /*ここまで*/
     }
   
