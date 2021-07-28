@@ -55,7 +55,7 @@ html {
   }
   
   .main1 {
-    background-color: aqua;
+    /*background-color: aqua;*/
     height: 100%;
     flex: 1 1 0px;
     display: flex;
@@ -73,7 +73,7 @@ html {
   }
   
   .main2 {
-    background-color: aquamarine;
+    /*background-color: aquamarine;*/
     flex: 1 1 auto;
     display: flex;
     flex-wrap: wrap;
@@ -95,7 +95,7 @@ html {
   }
   
   .main3 {
-    background-color: bisque;
+    /*background-color: bisque;*/
     flex: 1 1 auto;
     display: flex;
     flex-wrap: wrap;
